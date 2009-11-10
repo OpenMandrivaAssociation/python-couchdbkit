@@ -13,7 +13,7 @@ Group:	    Development/Python
 URL:		http://%module_name.org
 Source:     http://bitbucket.org/benoitc/%module_name/get/%{version}.tar.bz2	
 Requires:	python
-BuildRequires:  python-devel 
+BuildRequires:  python-devel python-setuptools 
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-buildroot
 
