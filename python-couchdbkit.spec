@@ -12,7 +12,6 @@ License:	BSD
 Group:	    Development/Python
 URL:		http://%module_name.org
 Source:     http://bitbucket.org/benoitc/%module_name/get/%{version}.tar.bz2	
-Requires:	python
 BuildRequires:  python-devel python-setuptools 
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-buildroot
@@ -22,8 +21,10 @@ Buildroot:	%{_tmppath}/%{name}-buildroot
 Framework for your Python application to access and manage Couchdb.
 
 %prep
-
 %setup -q -n %module_name
+
+%build
+
 %install
 rm -rf $RPM_BUILD_ROOT
 python setup.py install --root=$RPM_BUILD_ROOT 
