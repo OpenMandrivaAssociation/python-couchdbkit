@@ -1,6 +1,6 @@
 %define module_name couchdbkit
 %define name python-%module_name
-%define version 0.4.1
+%define version 0.4.2
 %define release %mkrel 1
 
 Name:		%{name}
@@ -36,6 +36,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc examples doc 
 %{py_puresitedir}/%module_name
 %{py_puresitedir}/*.egg-info
-# that's quite weird to have files there
-%{py_puresitedir}/tests
-
