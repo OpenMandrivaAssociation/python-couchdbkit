@@ -33,7 +33,7 @@ python setup.py install --root=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644,root,root)
+%defattr(644,root,root,755)
 %doc examples doc 
 %{py_puresitedir}/%module_name
 %{py_puresitedir}/*.egg-info
