@@ -1,7 +1,8 @@
 %define module_name couchdbkit
 %define name python-%module_name
-%define version 0.4.2
+%define version 0.4.5
 %define release %mkrel 1
+%define git_rev 43e9ffa
 
 Name:		%{name}
 Summary:    Framework for your Python application to access and manage Couchdb	
@@ -11,7 +12,8 @@ Release:	%{release}
 License:	BSD
 Group:	    Development/Python
 URL:		http://%module_name.org
-Source:     http://bitbucket.org/benoitc/%module_name/get/%{version}.tar.bz2	
+# (misc) downloaded on http://github.com/benoitc/couchdbkit/downloads
+Source:     benoitc-couchdbkit-%git_rev.tar.gz 
 BuildRequires:  python-devel python-setuptools 
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-buildroot
@@ -21,7 +23,7 @@ Buildroot:	%{_tmppath}/%{name}-buildroot
 Framework for your Python application to access and manage Couchdb.
 
 %prep
-%setup -q -n %module_name
+%setup -q -n benoitc-couchdbkit-%git_rev
 
 %build
 
