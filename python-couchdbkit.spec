@@ -1,6 +1,6 @@
 %define module_name couchdbkit
 %define name python-%module_name
-%define version 0.4.5
+%define version 0.4.11
 %define release %mkrel 1
 %define git_rev 43e9ffa
 
