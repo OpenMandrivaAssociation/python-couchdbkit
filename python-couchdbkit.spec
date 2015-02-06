@@ -1,7 +1,7 @@
 %define module_name couchdbkit
 %define name python-%module_name
 %define version 0.5.4
-%define release %mkrel 1
+%define release 2
 %define git_rev 43e9ffa
 
 Name:		%{name}
