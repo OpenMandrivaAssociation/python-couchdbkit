@@ -11,7 +11,7 @@ Release:	%{release}
 
 License:	BSD
 Group:	    Development/Python
-URL:		http://%module_name.org
+URL:		https://%module_name.org
 # (misc) downloaded on http://github.com/benoitc/couchdbkit/downloads
 Source:     benoitc-couchdbkit-%git_rev.tar.gz 
 BuildRequires:  python-devel python-setuptools 
